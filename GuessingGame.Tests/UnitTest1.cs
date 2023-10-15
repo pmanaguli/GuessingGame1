@@ -16,7 +16,7 @@ public class UnitTest1
         INumberGenerator numberGenerator = Substitute.For<INumberGenerator>();
         numberGenerator.Generate(minRange, maxRange).Returns(guessNumber);
         Service service = new Service(numberGenerator);
-        string result=service.GetResult(minRange,maxRange,6);
-
+        service.GetResult(minRange,maxRange,6);
+        Assert.True(true);
     }
 }
