@@ -14,6 +14,8 @@ namespace GuessingGame
             Service result=new Service(numberGenerator);          
             Console.WriteLine("Welcome to the Guessing Game!");
              var level=result.GetLevel();
+
+            
         
         }
     }
